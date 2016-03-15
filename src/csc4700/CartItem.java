@@ -22,12 +22,16 @@ public class CartItem {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         CartItem cartItem = (CartItem) o;
 
-        return item != null ? item.equals(cartItem.item) : cartItem.item == null;
+        return item.equals(cartItem.item);
 
     }
 

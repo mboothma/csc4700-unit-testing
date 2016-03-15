@@ -31,7 +31,9 @@ public class ShoppingCart {
             return;
         }
 
-        if (cartItem.getCount() == 0) {
+        if (cartItem.getCount() == 1) {
+            // Removing the last of this item, so remove it
+            // fully from the cart
             cartItems.remove(cartItem);
         }
         else {
