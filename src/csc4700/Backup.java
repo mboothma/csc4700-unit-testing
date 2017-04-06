@@ -98,6 +98,7 @@ public class Backup {
             allLines.append(line);
             allLines.append(LINE_SEPARATOR);
         }
+        br.close()
 
         // Deserialize the contents into a ContactList.
         ShoppingCart result = deserializeShoppingCart(allLines.toString());
